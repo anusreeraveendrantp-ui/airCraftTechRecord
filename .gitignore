@@ -1,0 +1,44 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Boot
+application-local.properties
+application-local.yml
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+*.js.map
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.env
+*.env.local
+
+# Uploads directory (runtime data)
+backend/uploads/
+
+# Logs
+*.log
+logs/

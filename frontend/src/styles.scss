@@ -1,0 +1,37 @@
+// Angular Material theme — v18 uses prebuilt themes
+@use '@angular/material' as mat;
+
+// Import a pre-built theme (indigo-pink is clean and professional)
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+// Include core styles
+@include mat.core();
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #f5f5f5;
+}
+
+// Status badge utility classes — used throughout the app
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &--ok       { background: #e8f5e9; color: #2e7d32; }
+  &--due-soon { background: #fff3e0; color: #e65100; }
+  &--overdue  { background: #ffebee; color: #c62828; }
+}
+
+// Layout helpers
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}

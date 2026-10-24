@@ -54,10 +54,7 @@ Demo credentials:
 
 **Prerequisites:** Docker and Docker Compose installed.
 
-```bash
-git clone <your-repo-url>
-cd aircraft-tech-records
-docker compose up --build
+
 ```
 
 - Frontend: http://localhost

@@ -27,36 +27,30 @@ import { AuthService } from './core/services/auth.service';
       <mat-sidenav-container class="sidenav-container">
         <mat-sidenav #sidenav mode="side" opened class="sidenav">
           <div class="brand">
-            <mat-icon>flight</mat-icon>
             <span>TechRecords</span>
           </div>
           <mat-nav-list>
             <a mat-list-item routerLink="/dashboard" routerLinkActive="active-link">
-              <mat-icon matListItemIcon>dashboard</mat-icon>
               <span matListItemTitle>Dashboard</span>
             </a>
             <a mat-list-item routerLink="/aircraft" routerLinkActive="active-link">
-              <mat-icon matListItemIcon>airplanemode_active</mat-icon>
               <span matListItemTitle>Aircraft</span>
             </a>
             <a mat-list-item routerLink="/ads" routerLinkActive="active-link">
-              <mat-icon matListItemIcon>warning</mat-icon>
               <span matListItemTitle>Airworthiness Directives</span>
             </a>
             <a mat-list-item routerLink="/documents" routerLinkActive="active-link">
-              <mat-icon matListItemIcon>folder</mat-icon>
               <span matListItemTitle>Documents</span>
             </a>
             <a mat-list-item routerLink="/audit" routerLinkActive="active-link"
                *ngIf="auth.hasRole('ADMIN') || auth.hasRole('AUDITOR')">
-              <mat-icon matListItemIcon>history</mat-icon>
               <span matListItemTitle>Audit Log</span>
             </a>
           </mat-nav-list>
 
           <div class="sidenav-footer">
             <button mat-button (click)="logout()" class="logout-btn">
-              <mat-icon>logout</mat-icon> Sign out
+              Sign out
             </button>
           </div>
         </mat-sidenav>
@@ -85,7 +79,8 @@ import { AuthService } from './core/services/auth.service';
     .sidenav-footer { margin-top: auto; padding: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
     .logout-btn { color: rgba(255,255,255,0.7); width: 100%; }
     .active-link { background: rgba(255,255,255,0.15) !important; }
-    mat-nav-list a { color: rgba(255,255,255,0.85); }
+    mat-nav-list a { color: #ffffff; }
+    mat-nav-list a span { color: #ffffff; }
     .app-toolbar { position: sticky; top: 0; z-index: 100; }
     .spacer { flex: 1; }
     .role-chip { background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 12px; }

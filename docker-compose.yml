@@ -25,11 +25,11 @@ services:
       db:
         condition: service_healthy
     environment:
-      DB_URL: jdbc:postgresql://db:5432/techrecords
-      DB_USERNAME: techrecords
-      DB_PASSWORD: techrecords
-      JWT_SECRET: ChangeThisToALongSecretKeyInProduction1234567890
-      CORS_ORIGINS: http://localhost
+      DB_URL: jdbc:postgresql://neondb_owner:npg_VK5t7jEHmrBR@ep-round-bread-a11q6xrt-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
+      DB_USERNAME: neondb_owner
+      DB_PASSWORD: npg_VK5t7jEHmrBR
+      JWT_SECRET: bpIxPx8lrCBY7ikLmJ+Ync+/KxfxpNPGnzUY5peF8vbzHyD/d+UsyoMYTcNQWmzP
+      CORS_ORIGINS: https://aircraft-tech-records.netlify.app
     ports:
       - "8080:8080"
     volumes:

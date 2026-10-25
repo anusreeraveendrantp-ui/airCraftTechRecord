@@ -10,8 +10,8 @@ A full-stack portfolio project for aviation maintenance record management and du
 
 | Part | URL |
 |---|---|
-| Frontend | _(add your Netlify/Vercel URL here)_ |
-| Backend API | _(add your Render URL here)_ |
+| Frontend | https://air-craft-tech-record.vercel.app/aircraft
+| Backend API https://aircrafttechrecord.onrender.com
 
 Demo credentials:
 

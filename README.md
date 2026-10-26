@@ -164,19 +164,9 @@ Status is evaluated against **whichever limit is reached first**:
 
 ### Backend → Render (Free Tier)
 
-1. Create a new **Web Service** on Render, connect your repo
-2. Set build command: `cd backend && mvn package -DskipTests`
-3. Set start command: `java -Xmx256m -jar backend/target/*.jar`
-4. Add environment variables: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ORIGINS`
-5. Use **Neon** or **Supabase** for the free PostgreSQL database
-
 ### Frontend → Netlify / Vercel
 
-1. Set build command: `npm run build -- --configuration production`
-2. Set publish directory: `dist/frontend/browser`
-3. Add environment variable: set `apiUrl` in `environment.prod.ts` to your Render backend URL
 
----
 
 ## Aviation Terminology Used
 
